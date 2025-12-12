@@ -64,10 +64,9 @@ Key parameters in `config.py`:
 | SARIMA | 25.01 | 19.99 | 44.6% |
 | LSTM | **16.31** | **12.08** | **25.4%** |
 
-<p align="center">
-  <img src="plots/forecast_rmse_mean.png" width="45%" />
-  <img src="plots/rmse_histogram.png" width="45%" />
-</p>
+| RMSE Comparison | MAE Comparison | MAPE Comparison |
+|:---------------:|:--------------:|:---------------:|
+| ![RMSE](plots/forecast_rmse_mean.png) | ![MAE](plots/forecast_mae_mean.png) | ![MAPE](plots/forecast_mape_mean.png) |
 
 ### Capacity Planning
 
@@ -77,18 +76,17 @@ Key parameters in `config.py`:
 | LSTM | 1.94 | 10.9% |
 | Oracle | 1.59 | 2.4% |
 
-<p align="center">
-  <img src="plots/capacity_u_max_mean.png" width="45%" />
-  <img src="plots/capacity_f_over_mean.png" width="45%" />
-</p>
+| Mean Utilization | Max Utilization | Overload Rate |
+|:----------------:|:---------------:|:-------------:|
+| ![U_max Mean](plots/capacity_u_max_mean.png) | ![U_max Max](plots/capacity_u_max_max.png) | ![Overload](plots/capacity_f_over_mean.png) |
 
 **Key Finding**: LSTM's better forecasting accuracy translates to significantly lower capacity over-provisioning and reduced overload events compared to SARIMA.
 
-### Example: Link Time Series
+### Per-Link Analysis
 
-<p align="center">
-  <img src="plots/timeseries_link_18_median_perf.png" width="80%" />
-</p>
+| RMSE Distribution | LSTM Wins | SARIMA Wins |
+|:-----------------:|:---------:|:-----------:|
+| ![Histogram](plots/rmse_histogram.png) | ![LSTM Better](plots/timeseries_link_8_lstm_better.png) | ![SARIMA Better](plots/timeseries_link_4_sarima_better.png) |
 
 ## Usage Options
 
