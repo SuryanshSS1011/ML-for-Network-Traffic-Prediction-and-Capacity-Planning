@@ -82,11 +82,15 @@ Key parameters in `config.py`:
 
 **Key Finding**: LSTM's better forecasting accuracy translates to significantly lower capacity over-provisioning and reduced overload events compared to SARIMA.
 
-### Per-Link Analysis
+### Per-Link RMSE Distribution
 
-| RMSE Distribution | LSTM Wins | SARIMA Wins |
-|:-----------------:|:---------:|:-----------:|
-| ![Histogram](plots/rmse_histogram.png) | ![LSTM Better](plots/timeseries_link_8_lstm_better.png) | ![SARIMA Better](plots/timeseries_link_4_sarima_better.png) |
+![RMSE Histogram](plots/rmse_histogram.png)
+
+### Time Series Examples
+
+| LSTM Wins | SARIMA Wins |
+|:---------:|:-----------:|
+| ![LSTM Better](plots/timeseries_link_8_lstm_better.png) | ![SARIMA Better](plots/timeseries_link_4_sarima_better.png) |
 
 ## Usage Options
 
