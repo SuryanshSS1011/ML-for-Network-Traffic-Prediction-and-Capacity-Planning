@@ -33,12 +33,12 @@ data/*.pkl
 models/*.pt
 models/*.pth
 
-# Results (regenerable)
+# Results - predictions are large/regenerable, but keep JSON metrics
 results/*.npz
-results/*.json
+# results/*.json  # Keep JSON metrics for quick reference
 
-# Plots (regenerable)
-plots/*.png
+# Plots - keep for visual reference
+# plots/*.png
 
 # Jupyter
 .ipynb_checkpoints/
