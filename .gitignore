@@ -68,4 +68,4 @@ Thumbs.db
 *.toc
 *.lof
 *.lot
-report/*.pdf
+# report/*.pdf  # Keep PDF for easy viewing on GitHub
