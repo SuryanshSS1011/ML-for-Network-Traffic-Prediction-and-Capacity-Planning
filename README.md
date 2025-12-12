@@ -38,7 +38,8 @@ python main.py
 ├── data/               # Generated data files
 ├── models/             # Trained model artifacts
 ├── results/            # Metrics and predictions
-└── plots/              # Visualization outputs
+├── plots/              # Visualization outputs
+└── report/             # Academic paper (LaTeX)
 ```
 
 ## Configuration
@@ -117,6 +118,15 @@ python eval_capacity.py
 - **Model**: `models/lstm_forecaster.pt`
 - **Metrics**: `results/combined_results.json`
 - **Plots**: `plots/*.png` (histograms, comparisons, time series)
+
+## Report
+
+A detailed academic report is available in [`report/paper.tex`](report/paper.tex) (IEEE format). It includes:
+- Literature survey of ML approaches for traffic prediction
+- Detailed methodology and mathematical formulation
+- Extended discussion of results and limitations
+
+To compile: `cd report && pdflatex paper.tex && bibtex paper && pdflatex paper.tex && pdflatex paper.tex`
 
 ## Requirements
 

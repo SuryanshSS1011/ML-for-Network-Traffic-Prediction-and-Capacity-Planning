@@ -56,3 +56,16 @@ Thumbs.db
 
 # Logs
 *.log
+
+# LaTeX build artifacts
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.out
+*.synctex.gz
+*.toc
+*.lof
+*.lot
+report/*.pdf
