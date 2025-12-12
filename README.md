@@ -121,12 +121,14 @@ python eval_capacity.py
 
 ## Report
 
-A detailed academic report is available in [`report/paper.tex`](report/paper.tex) (IEEE format). It includes:
+A detailed academic report is available: **[paper.pdf](report/paper.pdf)** (IEEE format)
+
+It includes:
 - Literature survey of ML approaches for traffic prediction
 - Detailed methodology and mathematical formulation
 - Extended discussion of results and limitations
 
-To compile: `cd report && pdflatex paper.tex && bibtex paper && pdflatex paper.tex && pdflatex paper.tex`
+LaTeX source: [`report/paper.tex`](report/paper.tex)
 
 ## Requirements
 
